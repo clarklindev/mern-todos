@@ -1,5 +1,7 @@
 # MERN todos
 
+- mern-todos NOTE: the backend is running on Render (free plan) - it spins down after 15 minutes of inactivity. each time the service starts again, it can take up to a minute it to get back online.
+
 <img
 src='assets/todo.drawio.png'
 alt='todo.drawio.png'
