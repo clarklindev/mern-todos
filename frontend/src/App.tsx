@@ -52,6 +52,11 @@ function App() {
   return (
     <div>
       <h1>TODOs</h1>
+      <p>
+        mern-todos NOTE: the backend is running on Render (free plan) - it spins
+        down after 15 minutes of inactivity. each time the service starts again,
+        it can take up to a minute it to get back online.
+      </p>
       <input value={text} onChange={(e) => setText(e.target.value)} />
       <button onClick={addTodo}>Add</button>
       <ul>
