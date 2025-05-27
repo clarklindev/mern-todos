@@ -1,5 +1,11 @@
 # MERN todos
 
+<img
+src='assets/todo.drawio.png'
+alt='todo.drawio.png'
+width=300
+/>
+
 # Backend: Node.js + Express + Mongoose (for MongoDB)
 
 - to use es-module syntax: package.json
