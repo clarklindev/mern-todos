@@ -13,6 +13,19 @@
 
 - use nodemon as a dev dependency to continuously watch the server
 
+### deployment to Render
+
+- unless you use Vercel serverless api -> use deployment with something like [Render](render.com)
+
+### setup server on Render
+
+- new -> web service
+- set root folder: `backend/`
+- build command: `npm install`
+- run: `npm run dev`
+- set env variables
+- gives you deployed url: eg. `https://mern-todos-ndam.onrender.com` which you can use to connect on frontend via environment variable
+
 ---
 
 # Frontend: React (using Vite)
@@ -28,6 +41,19 @@
 const res = await fetch(API_URL);
 const data = await res.json();
 setTodos(data);
+```
+
+### env
+
+- Vite only exposes env variables to your code if they start with `VITE_`.
+  - eg. `VITE_API_URL=`
+
+### consuming env
+
+```js
+//frontend
+const baseURL = import.meta.env.VITE_API_URL;
+const API_URL = `${baseURL}/api/todos`;
 ```
 
 ---
